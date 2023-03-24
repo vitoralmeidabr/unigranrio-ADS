@@ -2,10 +2,10 @@
 import math
 
 print("Vamos calcular a média das suas notas bimestrais?")
-print("Exemplo: 8.5 / 4 / 0 / 10")
 
 while True:
     print("")
+    print("Exemplo: 8.5 / 4 / 0 / 10")
     nota1 = input("Informe a primeira nota: ")
     nota2 = input("Informe a segunda nota: ")
     nota3 = input("Informe a terceira nota: ")
@@ -20,7 +20,7 @@ while True:
         
         mediaFinal = round((nota1 + nota2 + nota3 + nota4)/4, 1)
     except ValueError:
-        print("Verifique o valor informado, para calcular a média das notas você deve informar apenas números.")
+        print("Verifique o valor informado, para calcular a média das notas você deve informar apenas números conforme o exemplo acima.")
         print("Vamos tentar de novo") 
         continue
     
