@@ -37,7 +37,9 @@ while True:
         salarioLiquido = salarioMes - totalDescontos
         salarioLiquidoFormatado = locale.currency(salarioLiquido, grouping=True)
     except ValueError:
-        print("Verifique os valores informados, para o seu salário informe números inteiros ou decimais e para as horas apenas números inteiros.")
+        print("")
+        print("Verifique os valores informados, para o seu salário utilize números inteiros ou decimais sem o separador de milhares e para as horas apenas números inteiros.")
+        print("Exemplo: 1000,50  / 10000 / 2300 / 4500.99")
         print("Vamos tentar de novo") 
         continue
 
