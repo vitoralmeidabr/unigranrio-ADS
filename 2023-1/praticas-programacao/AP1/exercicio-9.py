@@ -5,12 +5,12 @@ import locale
 # Definindo locale para brasil, facilitando a formatação monetária
 locale.setlocale(locale.LC_MONETARY, 'pt_BR.UTF-8')
 
-print("Considerando um número hipotético de vendedores na empresa...")
+print("Considerando um número hipotético de até 10 vendedores na empresa...")
 print("Vamos calcular as comissões desta semana de cada um e montar um ranking?")
 
 while True:
     print("")
-    numVendedores = input('Quantos vendedores a loja tem (até 10)? ')
+    numVendedores = input('Quantos vendedores a loja tem? ')
 
     print("")
     try:
@@ -36,7 +36,7 @@ while True:
     try:
         for vendedor in range(1,numVendedores+1):
             valorBrutoVendedor = input('Vendedor ' + str(vendedor) + ': R$ ')
-            
+
             vendas = float(valorBrutoVendedor.replace(",", "."))
             salarios.append(200 + ( vendas * 0.09 ))
         break
