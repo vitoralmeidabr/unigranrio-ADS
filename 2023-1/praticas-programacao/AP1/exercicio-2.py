@@ -5,7 +5,7 @@ print("Vamos calcular a média das suas notas bimestrais?")
 
 while True:
     print("")
-    print("Exemplo: 8.5 / 4 / 0 / 10")
+    print("Para informar as notas siga o exemplo a seguir: 8.5 / 4 / 0 / 10")
     nota1 = input("Informe a primeira nota: ")
     nota2 = input("Informe a segunda nota: ")
     nota3 = input("Informe a terceira nota: ")
